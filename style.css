@@ -1,0 +1,11 @@
+.server {
+    color: yellowgreen;
+}
+
+.winner {
+    color: red;
+}
+
+.loser {
+    color: darkblue;
+}

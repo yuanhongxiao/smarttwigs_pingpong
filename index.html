@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ping Pong</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <div class="card">
+                <header>
+                    Ping Pong Game
+                </header>
+                <div class="card-content">
+                    <label for="scoreToWin">Winning Score</label>
+                    <div class="select">
+                        <select name="" id="scoreToWin">
+                            <option value="11">11</option>
+                            <option value="21">21</option>
+                        </select>
+                    </div>
+                    <form action="">
+                        <div class="piName">
+                            <label for="p1NameInput">P1 Name:</label>
+                            <input type="text" id="p1NameInput" name="name">
+                            <select name="" id="p1NameSelect"></select>
+                            <!-- <% for (i  = 0; i < nameList.length; i++) { %> -->
+                            <!-- <option value="<%= nameList[i] %>"><%= nameList[i] %></option> -->
+                            <!-- <% } %> -->
+                        </div>
+                        <div class="p2Name">
+                            <label for="p2NameInput">P2 Name:</label>
+                            <input type="text" id="p2NameInput" name="name">
+                            <select name="" id="p2NameSelect"></select>
+                        </div>
+                        <button>Submit</button>
+                    </form>
+                    <h1 class="title"><span id="p1Name">P1</span> : <span id="p2Name">P2</span></h1>
+                    <h1 class="title"><span id="p1Score">0</span> : <span id="p2Score">0</span></h1>
+                    <button id="p1Button" disabled>Player1: +1 point</button>
+                    <button id="p2Button" disabled>Player2: +1 point</button><br>
+                    <button id="start">Start</button>
+                    <button id="terminate" disabled>Terminate</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
